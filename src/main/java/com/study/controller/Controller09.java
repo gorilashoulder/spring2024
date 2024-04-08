@@ -53,6 +53,8 @@ public class Controller09 {
         obj1.setProductPrice(5000);
         obj1.setName("KIA");
         obj1.setWeight(2400.50);
+        obj1.setUsed(true);
+
         model.addAttribute("car", obj1);
     }
 }

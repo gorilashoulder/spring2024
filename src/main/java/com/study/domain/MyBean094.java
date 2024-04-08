@@ -5,6 +5,16 @@ public class MyBean094 {
     private Integer productPrice;
     private String name;
     private Double weight;
+    private Boolean used;
+
+
+    public boolean isUsed() {
+        return used;
+    }
+
+    public void setUsed(boolean used) {
+        this.used = used;
+    }
 
     public String getModelNumber() {
         return modelNumber;
