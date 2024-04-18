@@ -2,7 +2,6 @@
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <html>
 <head>
-    <title>Title</title>
     <style>
         table, tr, th, td {
             border: 1px solid black;
@@ -15,17 +14,6 @@
     </style>
 </head>
 <body>
-<h3>고객 목록</h3>
-<%--action의 값이 없거나 생략되면 현재 요청 경로로 --%>
-<form>
-    국가
-    <select name="country" multiple>
-        <c:forEach items="${countryList}" var="country">
-            <option value="${country}">${country}</option>
-        </c:forEach>
-    </select>
-    <button>조회</button>
-</form>
 <hr>
 <table>
     <thead>

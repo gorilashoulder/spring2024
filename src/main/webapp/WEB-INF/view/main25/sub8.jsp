@@ -6,7 +6,7 @@
 </head>
 <body>
 <form action="">
-    <input type="text" name="search" placeholder="이름입력">
+    <input value="${prevSearch}" type="text" name="search" placeholder="이름입력">
     <button>제출</button>
 </form>
 <hr>

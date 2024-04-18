@@ -4,6 +4,10 @@ import lombok.Data;
 
 @Data
 public class MyBean256 {
-    private String firstName;
-    private String lastName;
+    private Integer id;
+    private String name;
+    private Integer supplierId;
+    private Integer categoryId;
+    private String unit;
+    private Double price;
 }

@@ -248,8 +248,8 @@ public class Controller25 {
         try (rs; conn; pstmt) {
             while (rs.next()) {
                 MyBean256 obj = new MyBean256();
-                obj.setLastName(rs.getString(2));
-                obj.setFirstName(rs.getString(3));
+                obj.setName(rs.getString(2));
+                obj.setId(rs.getInt(3));
                 list.add(obj);
             }
         }

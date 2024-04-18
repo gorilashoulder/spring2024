@@ -1,0 +1,30 @@
+USE w3schools
+
+# not :조건을 만족하지 않으면 TRUE
+SELECT *
+FROM Employees
+WHERE NOT BirthDate >'1960-01-01';
+
+SELECT *
+FROM Customers
+WHERE NOT Country NOT IN ('France','uk','spain')
+ORDER BY Country;
+
+SELECT *
+FROM Products
+WHERE NOT Price BETWEEN 100 AND 200
+ORDER BY Price;
+
+SELECT *
+FROM Products
+WHERE NOT (CategoryID=1) AND Price > 50
+ORDER BY CategoryID,Price;
+
+SELECT *
+FROM Orders
+WHERE NOT OrderDate BETWEEN '1997-01-01' AND '1997-12-31';
+
+SELECT *
+FROM Suppliers
+WHERE NOT Country IN ('usa','uk')
+
