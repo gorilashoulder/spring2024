@@ -41,8 +41,8 @@ public class Controller25 {
                 String photo = rs.getString(5);
                 String notes = rs.getString(6);
 
-                MyBean251 obj = new MyBean251(id, lastName, firstName, birthDate, photo, notes);
-                list.add(obj);
+                //MyBean251 obj = new MyBean251(id, lastName, firstName, birthDate, photo, notes);
+                //list.add(obj);
             }
 
         }
