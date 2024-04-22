@@ -5,6 +5,9 @@
     <title>Title</title>
 </head>
 <body>
+<c:if test="${not empty message}">
+    <div style="padding: 20px; background-color: skyblue">${message}</div>
+</c:if>
 <h3>임직원 추가</h3>
 <form action="" method="post">
     <div>
@@ -17,7 +20,7 @@
     </div>
     <div>
         생일
-        <input type="text" name="birthDate">
+        <input type="date" name="birthDate">
     </div>
     <div>
         사진

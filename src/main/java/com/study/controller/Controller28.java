@@ -21,12 +21,12 @@ public class Controller28 {
     private DataSource dataSource;
 
     @GetMapping("sub1")
-    public void sub1() {
+    public void method1() {
 
     }
 
     @PostMapping("sub1")
-    public String sub2(MyBean254Customer customer, RedirectAttributes rttr) throws SQLException {
+    public String method2(MyBean254Customer customer, RedirectAttributes rttr) throws SQLException {
         System.out.println("customer = " + customer);
         String sql = """
                 INSERT INTO Customers
@@ -53,12 +53,12 @@ public class Controller28 {
     }
 
     //임원추가
-    @GetMapping("sub3")
-    public void sub3() {
+    @GetMapping("sub2")
+    public void method3() {
     }
 
-    @PostMapping("sub3")
-    public String sub4(MyBean241 myBean241) throws SQLException {
+    @PostMapping("sub2")
+    public String method4(MyBean241 myBean241, RedirectAttributes rttr) throws SQLException {
         System.out.println("myBean241 = " + myBean241);
         String sql = """
                 INSERT INTO Employees
@@ -75,8 +75,14 @@ public class Controller28 {
             pstmt.setString(4, myBean241.getPhoto());
             pstmt.setString(5, myBean241.getNotes());
 
-            pstmt.executeUpdate();
+            int rowCount = pstmt.executeUpdate();
+            if (rowCount == 1) {
+                rttr.addFlashAttribute("message", "저장성공");
+            } else {
+                rttr.addFlashAttribute("message", "저장실패");
+            }
         }
-        return "main28/sub3";
+
+        return "redirect:/main28/sub2";
     }
 }
