@@ -54,3 +54,6 @@ WHERE CategoryID = 2;
 UPDATE Products
 SET Price=Price * 2
 WHERE CategoryID = 2;
+
+SELECT *
+FROM Employees;
