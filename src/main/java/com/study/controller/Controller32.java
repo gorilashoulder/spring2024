@@ -74,9 +74,9 @@ public class Controller32 {
     //고객 조회후 수정
 
     @GetMapping("sub7")
-    public void method8(@RequestParam(value = "id", required = false) Integer cid, Model model) {
-        if (cid != null) {
-            MyBean254Customer c = mapper.selectAllCustomers(cid);
+    public void method8(Integer id, Model model) {
+        if (id != null) {
+            MyBean254Customer c = mapper.selectAllCustomers(id);
             model.addAttribute("customer", c);
         }
     }

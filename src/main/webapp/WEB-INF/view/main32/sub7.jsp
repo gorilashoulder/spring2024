@@ -13,10 +13,13 @@
     <button>조회</button>
 </form>
 <hr>
+<c:if test="${empty customer}">
+    조회 안됨
+</c:if>
 <c:if test="${not empty customer}">
     <form action="/main32/sub7/update" method="post">
         <div>
-            <input type="text" value="${customer.id}" name="id">
+            <input type="text" value="${customer.id}" readonly name="id">
         </div>
         <div>
             <input type="text" value="${customer.name}" name="name">
