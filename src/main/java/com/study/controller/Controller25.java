@@ -101,7 +101,7 @@ public class Controller25 {
 
                 MyBean254Customer obj = new MyBean254Customer();
                 obj.setId(id);
-                obj.setName(name);
+                obj.setCustomerName(name);
                 obj.setContactName(contactName);
                 obj.setAddress(address);
                 obj.setCity(city);
@@ -143,7 +143,7 @@ public class Controller25 {
 
                 MyBean254Customer obj = new MyBean254Customer();
                 obj.setId(id);
-                obj.setName(name);
+                obj.setCustomerName(name);
                 obj.setContactName(contactName);
                 obj.setAddress(address);
                 obj.setCity(city);
@@ -213,7 +213,7 @@ public class Controller25 {
             while (rs.next()) {
                 MyBean254Customer obj = new MyBean254Customer();
                 obj.setId(rs.getInt(1));
-                obj.setName(rs.getString(2));
+                obj.setCustomerName(rs.getString(2));
                 obj.setContactName(rs.getString(3));
                 obj.setAddress(rs.getString(4));
                 obj.setCity(rs.getString(5));

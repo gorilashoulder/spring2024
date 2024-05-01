@@ -94,7 +94,7 @@ public class Controller26 {
                 while (resultSet.next()) {
                     MyBean254Customer data = new MyBean254Customer();
                     data.setId(resultSet.getInt(1));
-                    data.setName(resultSet.getString(2));
+                    data.setCustomerName(resultSet.getString(2));
                     data.setContactName(resultSet.getString(3));
                     data.setAddress(resultSet.getString(4));
                     data.setCity(resultSet.getString(5));

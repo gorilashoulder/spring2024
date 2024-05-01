@@ -62,6 +62,7 @@
             <thead>
             <tr>
                 <th>#</th>
+                <th>customerId</th>
                 <th>customerName</th>
                 <th>매출액</th>
             </tr>

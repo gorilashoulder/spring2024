@@ -27,7 +27,7 @@ public class Mapper01 {
                 if (rs.next()) {
                     MyBean254Customer c = new MyBean254Customer();
                     c.setId(rs.getInt(1));
-                    c.setName(rs.getString(2));
+                    c.setCustomerName(rs.getString(2));
                     c.setContactName(rs.getString(3));
                     c.setAddress(rs.getString(4));
                     c.setCity(rs.getString(5));

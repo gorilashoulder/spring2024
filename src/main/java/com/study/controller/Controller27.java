@@ -83,7 +83,7 @@ public class Controller27 {
                 MyBean254Customer customer = new MyBean254Customer();
 
                 customer.setId(rs.getInt(1));
-                customer.setName(rs.getString(2));
+                customer.setCustomerName(rs.getString(2));
                 customer.setContactName(rs.getString(3));
                 customer.setAddress(rs.getString(4));
                 customer.setCity(rs.getString(5));

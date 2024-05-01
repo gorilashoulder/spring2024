@@ -37,7 +37,7 @@ public class Controller28 {
         PreparedStatement pstmt = conn.prepareStatement(sql);
         try (pstmt; conn) {
 
-            pstmt.setString(1, customer.getName());
+            pstmt.setString(1, customer.getCustomerName());
             pstmt.setString(2, customer.getContactName());
             pstmt.setString(3, customer.getAddress());
             pstmt.setString(4, customer.getCity());
